@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 function CountdownTimer() {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
@@ -54,19 +55,36 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative py-16 md:py-24 bg-gradient-to-b from-slate-800 to-slate-900">
         <div className="max-w-6xl mx-auto px-4">
-          <div className="text-center mb-8">
-            <span className="inline-block bg-cyan-500/20 text-cyan-400 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              🇬🇧 REFORM UK DEPUTY LEADER
-            </span>
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">
-              Richard Tice
-            </h1>
-            <p className="text-xl md:text-2xl text-slate-300 mb-2">
-              Member of Parliament for Boston &amp; Skegness
-            </p>
-            <p className="text-lg text-slate-400">
-              Businessman • Property Developer • Brexit Campaigner
-            </p>
+          <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12 mb-8">
+            {/* Portrait */}
+            <div className="flex-shrink-0">
+              <div className="relative w-48 h-64 md:w-64 md:h-80 rounded-xl overflow-hidden shadow-2xl border-4 border-cyan-500/30">
+                <Image
+                  src="/images/hero.jpg"
+                  alt="Richard Tice MP - Official Parliamentary Portrait"
+                  fill
+                  className="object-cover object-top"
+                  priority
+                />
+              </div>
+              <p className="text-xs text-slate-500 text-center mt-2">Official Parliamentary Portrait, 2024</p>
+            </div>
+            
+            {/* Text */}
+            <div className="text-center md:text-left">
+              <span className="inline-block bg-cyan-500/20 text-cyan-400 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                🇬🇧 REFORM UK DEPUTY LEADER
+              </span>
+              <h1 className="text-4xl md:text-6xl font-bold mb-4">
+                Richard Tice
+              </h1>
+              <p className="text-xl md:text-2xl text-slate-300 mb-2">
+                Member of Parliament for Boston &amp; Skegness
+              </p>
+              <p className="text-lg text-slate-400">
+                Businessman • Property Developer • Brexit Campaigner
+              </p>
+            </div>
           </div>
 
           {/* Quote */}
