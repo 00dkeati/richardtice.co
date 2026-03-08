@@ -337,8 +337,49 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Social Links */}
+      {/* Learn More */}
       <section className="py-16 bg-slate-800">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-2xl font-bold text-center mb-8">📚 Learn More About Richard Tice</h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <Link 
+              href="/net-worth"
+              className="bg-slate-700 hover:bg-slate-600 p-6 rounded-xl transition text-center group"
+            >
+              <div className="text-3xl mb-2">💰</div>
+              <h3 className="font-semibold group-hover:text-cyan-400 transition">Net Worth</h3>
+              <p className="text-sm text-slate-400">£40 million fortune</p>
+            </Link>
+            <Link 
+              href="/wife"
+              className="bg-slate-700 hover:bg-slate-600 p-6 rounded-xl transition text-center group"
+            >
+              <div className="text-3xl mb-2">💍</div>
+              <h3 className="font-semibold group-hover:text-cyan-400 transition">Wife &amp; Family</h3>
+              <p className="text-sm text-slate-400">Isabel Oakeshott</p>
+            </Link>
+            <Link 
+              href="/reform-uk"
+              className="bg-slate-700 hover:bg-slate-600 p-6 rounded-xl transition text-center group"
+            >
+              <div className="text-3xl mb-2">🗳️</div>
+              <h3 className="font-semibold group-hover:text-cyan-400 transition">Reform UK</h3>
+              <p className="text-sm text-slate-400">Political career</p>
+            </Link>
+            <Link 
+              href="/brexit"
+              className="bg-slate-700 hover:bg-slate-600 p-6 rounded-xl transition text-center group"
+            >
+              <div className="text-3xl mb-2">🇪🇺</div>
+              <h3 className="font-semibold group-hover:text-cyan-400 transition">Brexit</h3>
+              <p className="text-sm text-slate-400">Leave.EU campaign</p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Social Links */}
+      <section className="py-16 bg-slate-900">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-2xl font-bold mb-8">Stay Updated</h2>
           <p className="text-slate-400 mb-8">
