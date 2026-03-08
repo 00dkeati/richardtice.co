@@ -176,6 +176,22 @@ export default function Home() {
       <section className="py-16 bg-slate-800">
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-2xl font-bold text-center mb-10">📅 Career Timeline</h2>
+          
+          {/* MEP Portrait */}
+          <div className="flex justify-center mb-10">
+            <div>
+              <div className="relative w-32 h-44 rounded-lg overflow-hidden shadow-lg border-2 border-cyan-500/30">
+                <Image
+                  src="/images/mep-portrait.jpg"
+                  alt="Richard Tice MEP Portrait 2019"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <p className="text-xs text-slate-500 text-center mt-2">MEP Portrait, 2019</p>
+            </div>
+          </div>
+          
           <div className="space-y-6">
             {[
               { year: "1964", event: "Born in Farnham, Surrey, 13 September" },
@@ -203,12 +219,30 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Personal Life */}
+      {/* Reform UK MPs Photo */}
       <section className="py-16 bg-slate-900">
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="text-2xl font-bold text-center mb-8">🗳️ Reform UK in Parliament</h2>
+          <div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-2xl">
+            <Image
+              src="/images/reform-mps.jpg"
+              alt="Reform UK MPs in Parliament 2024"
+              fill
+              className="object-cover"
+            />
+          </div>
+          <p className="text-center text-slate-400 text-sm mt-4">
+            Reform UK MPs in Parliament, 2024 • L-R: Lee Anderson, Nigel Farage, Richard Tice, Rupert Lowe, James McMurdock
+          </p>
+        </div>
+      </section>
+
+      {/* Personal Life */}
+      <section className="py-16 bg-slate-800">
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-2xl font-bold text-center mb-10">💍 Personal Life</h2>
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-slate-800 rounded-xl p-6">
+            <div className="bg-slate-900 rounded-xl p-6">
               <h3 className="text-lg font-semibold text-cyan-400 mb-4">Family</h3>
               <ul className="space-y-3 text-slate-300">
                 <li>• Divorced from ex-wife Emma after 24-year marriage</li>
@@ -217,7 +251,7 @@ export default function Home() {
                 <li>• Studied at Trent Polytechnic (now Nottingham Trent University)</li>
               </ul>
             </div>
-            <div className="bg-slate-800 rounded-xl p-6">
+            <div className="bg-slate-900 rounded-xl p-6">
               <h3 className="text-lg font-semibold text-cyan-400 mb-4">Isabel Oakeshott</h3>
               <ul className="space-y-3 text-slate-300">
                 <li>• Relationship began in 2018</li>
@@ -232,30 +266,45 @@ export default function Home() {
       </section>
 
       {/* Business Background */}
-      <section className="py-16 bg-slate-800">
+      <section className="py-16 bg-slate-900">
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-2xl font-bold text-center mb-10">🏢 Business Background</h2>
-          <div className="bg-slate-900 rounded-xl p-8">
-            <p className="text-slate-300 mb-6">
-              Richard Tice made his fortune in commercial property, serving as CEO of <strong className="text-white">CLS Holdings plc</strong> from 2010 to 2014. 
-              CLS is a FTSE 250 company with a property portfolio worth over £2 billion across the UK, Germany, and France.
-            </p>
-            <p className="text-slate-300 mb-6">
-              In 2014, he founded <strong className="text-white">Quidnet Capital LLP</strong>, a property asset management firm. 
-              His net worth is estimated at approximately <span className="text-green-400 font-bold">£40 million</span>, primarily from property investments and business ventures.
-            </p>
+          <div className="bg-slate-800 rounded-xl p-8">
+            <div className="flex flex-col md:flex-row gap-8 items-start mb-6">
+              <div className="flex-shrink-0 mx-auto md:mx-0">
+                <div className="relative w-40 h-52 rounded-lg overflow-hidden shadow-lg">
+                  <Image
+                    src="/images/speaking.jpg"
+                    alt="Richard Tice speaking at event"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <p className="text-xs text-slate-500 text-center mt-2">Speaking, 2015</p>
+              </div>
+              <div>
+                <p className="text-slate-300 mb-4">
+                  Richard Tice made his fortune in commercial property, serving as CEO of <strong className="text-white">CLS Holdings plc</strong> from 2010 to 2014. 
+                  CLS is a FTSE 250 company with a property portfolio worth over £2 billion across the UK, Germany, and France.
+                </p>
+                <p className="text-slate-300">
+                  In 2014, he founded <strong className="text-white">Quidnet Capital LLP</strong>, a property asset management firm. 
+                  His net worth is estimated at approximately <span className="text-green-400 font-bold">£40 million</span>, primarily from property investments and business ventures.
+                </p>
+              </div>
+            </div>
             <div className="grid sm:grid-cols-3 gap-4 mt-8">
-              <div className="bg-slate-800 rounded-lg p-4 text-center">
+              <div className="bg-slate-700 rounded-lg p-4 text-center">
                 <div className="text-2xl mb-2">🏗️</div>
                 <div className="font-semibold">CLS Holdings</div>
                 <div className="text-sm text-slate-400">CEO 2010-2014</div>
               </div>
-              <div className="bg-slate-800 rounded-lg p-4 text-center">
+              <div className="bg-slate-700 rounded-lg p-4 text-center">
                 <div className="text-2xl mb-2">💼</div>
                 <div className="font-semibold">Quidnet Capital</div>
                 <div className="text-sm text-slate-400">Founder 2014</div>
               </div>
-              <div className="bg-slate-800 rounded-lg p-4 text-center">
+              <div className="bg-slate-700 rounded-lg p-4 text-center">
                 <div className="text-2xl mb-2">📈</div>
                 <div className="font-semibold">Property Investor</div>
                 <div className="text-sm text-slate-400">30+ years</div>
