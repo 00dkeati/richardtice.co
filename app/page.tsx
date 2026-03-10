@@ -423,6 +423,16 @@ export default function Home() {
             Member of Parliament for Boston and Skegness. This site provides comprehensive 
             coverage of his political career, business background, and policy positions.
           </p>
+          
+          <div className="flex justify-center gap-6 mb-4">
+            <a href="https://www.nigelfarage.co" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300 text-sm">
+              NigelFarage.co →
+            </a>
+            <a href="https://www.rupertlowe.co" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300 text-sm">
+              RupertLowe.co →
+            </a>
+          </div>
+          
           <p className="text-slate-500 text-xs">
             © 2026 RichardTice.co - Independent Information Resource<br />
             Not affiliated with Richard Tice or any political party.
