@@ -433,9 +433,12 @@ export default function Home() {
             </a>
           </div>
           
-          <p className="text-slate-500 text-xs">
+          <p className="text-slate-500 text-xs mb-2">
             © 2026 RichardTice.co - Independent Information Resource<br />
             Not affiliated with Richard Tice or any political party.
+          </p>
+          <p className="text-slate-600 text-xs">
+            Site by <a href="https://deankeating.com" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-cyan-400 transition">Dean Keating</a>
           </p>
         </div>
       </footer>
